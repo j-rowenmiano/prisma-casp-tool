@@ -27,7 +27,7 @@ def main():
         st.header("Step 2: Critical Appraisal")
         
         # Allow user to upload their list of papers
-        uploaded_file = st.file_誠("Upload your list of papers (CSV)", type=["csv"])
+        uploaded_file = st.file_uploader("Upload your list of papers (CSV)", type=["csv"])
         if uploaded_file:
             st.session_state.papers_df = pd.read_csv(uploaded_file)
         
